@@ -18,7 +18,7 @@ module.exports = function (grunt) {
       test: {
 
         // Assets to watch:
-        files: ['api/**/*', 'test/**/*.js'],
+        files: ['api/**/*', 'config/**/*', 'test/**/*.js'],
 
         tasks: ['test']
       }
