@@ -24,6 +24,9 @@ module.exports.policies = {
 
   AuthController: {
     '*': true
+  },
+  MissionController: {
+    'find': ['jwtAuth']
   }
 
   /***************************************************************************
