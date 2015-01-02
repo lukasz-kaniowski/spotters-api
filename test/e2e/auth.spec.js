@@ -9,6 +9,10 @@ describe('AuthController', function () {
       User.create({email: 'test@test.com', password: 'SuperSecretPassword123'}).exec(done);
     });
 
+    after(function (done) {
+      User.destroy({email: 'test@test.com'}).exec(done);
+    });
+
 
     it('should return 200 with body: { user, token } for user with correct password', function (done) {
       request(sails.hooks.http.app)
