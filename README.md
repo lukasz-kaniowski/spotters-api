@@ -8,6 +8,10 @@
 
      $ grunt test:watch
 
+# Documentation
+
+Api documentation is in apiary http://docs.spotters.apiary.io/
+
 # Model
 
 ## Mission
